@@ -5,6 +5,9 @@
     width: 800px;
     height: 40px;
     border-radius: 5px;
+    background-color: rgb(95, 85, 85);
+    color: white;
+    font-size: 20px;
 }
 
 .split-container{
@@ -14,7 +17,7 @@
 .pane1{
     flex: 0 0 23%;
     position: relative;
-    background-color: #eee;
+    background-color: rgb(95, 85, 85);
     height: 100%;
 }
 
@@ -36,10 +39,23 @@
 .group-image{
     width: 250px;
     height: 250px;
+    transition: all 0.5s ease;
+}
+
+.group-image:hover{
+    transform: scale(1.05);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.group-title{
+    color: white;
+    cursor: pointer;
 }
 
 .selected-category{
     margin-left: 500px;
+    color: white;
 }
 
 .product-list-horizontal{
@@ -49,16 +65,24 @@
 
 .product-box{
     flex: 0 0 auto;
+    margin-left: 30px;
+    margin-bottom: 20px;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
-    margin: 5px;
     height: 380px;
-    margin-left: 20px;
-    background-color: #eee;
+    color: white;
+    background-color: rgb(95, 85, 85);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px 2px rgb(68, 68, 68);
+}
+
+.product-box:hover{
+    transform: scale(1.05);
+    z-index: 2;
 }
 
 .selected-image{

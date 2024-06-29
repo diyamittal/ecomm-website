@@ -119,12 +119,12 @@ export default function ProductSlider({products}){
 
                     return(
                         <div className='product-slide' key={index}>
-                        <img src={product.image} alt={`product-${index}`} className='product-image'></img>
-                        <h3 className='title'>{product.title}</h3>
-                        <p className='price1'>Rs{product.price}</p>
-                        {isProductInCart ? (<Quantity quantity={quantity} onAddToCart={()=> addInCart(product)} onRemoveFromCart={()=> removeFromCart(productId)}/>
-                            ): (<button className='AddtoCart' onClick={()=>addToCart(product)}>ADD TO CART</button>
-                            )}
+                            <img src={product.image} alt={`product-${index}`} className='product-image'></img>
+                            <h3 className='title'>{product.title}</h3>
+                            <p className='price1'>Rs{product.price}</p>
+                            {isProductInCart ? (<Quantity quantity={quantity} onAddToCart={()=> addInCart(product)} onRemoveFromCart={()=> removeFromCart(productId)}/>
+                                ): (<button className='AddtoCart' onClick={()=>addToCart(product)}>ADD TO CART</button>
+                                )}
                         </div>
                     )
                 }

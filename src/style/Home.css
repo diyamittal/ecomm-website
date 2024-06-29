@@ -10,8 +10,10 @@
 .image{
     margin-top: 20px;
     margin-left: 50px;
-    width: 1450px;
+    margin-bottom: 20px;
+    width: 1410px;
     height: 600px;
+    border-radius: 10px;
 }
 
 .left-arrow, .right-arrow{
@@ -20,6 +22,7 @@
     transform: translateY(-50%);
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 .left-arrow{
@@ -31,13 +34,13 @@
 }
 
 .product-slider{
-    width: 96.7%;
+    width: 95.5%;
     overflow: hidden;
 }
 
 .product-slider-container{
     display: flex;
-    margin-left: 40px;
+    margin-left: 50px;
     transition: tranform 0.5s ease-in-out;
 }
 
@@ -46,11 +49,20 @@
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
     height: 380px;
+    color: white;
+    background-color: rgb(95, 85, 85);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 20px 2px rgb(68, 68, 68);
+}
+
+.product-slide:hover{
+    transform: scale(1.05);
+    z-index: 2;
 }
 
 .product-image{
@@ -60,10 +72,11 @@
 
 .left-arrow1, .right-arrow1{
     position: absolute;
-    top: 105%;
+    top: 117%;
     transform: translateY(-50%);
     font-size: 2rem;
     cursor: pointer;
+    color: white;
 }
 
 .left-arrow1{
@@ -75,8 +88,29 @@
 }
 
 .AddtoCart{
-    height: 30px;
-    width: 150px;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    height: 35px;
+    width: 180px;
+    font-size: 85%;
+    border: 3px solid #04fb6b;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    animation: animateBg 5s linear infinite;
+}
+
+.AddtoCart:hover{
+    background-color: aqua;
+}
+
+@keyframes animateBg{
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }

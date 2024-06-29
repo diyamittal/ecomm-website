@@ -15,14 +15,13 @@ import Location from './components/Location'
 
 export default function App(){
   return (
-    <div>
+    <div className='main'>
       <BrowserRouter>
       <Navbar />
       <Routes>
         <Route element={<PrivateComponent/>}>
         <Route path="/" element={<Home />}></Route>
         <Route path="/products" element={<Products />}></Route>
-        <Route path="/profile" element={<Profile/>}></Route>
         <Route path="/cart" element={<Cart />}></Route>
         <Route path='/Location' element={<Location />}></Route>
         </Route>

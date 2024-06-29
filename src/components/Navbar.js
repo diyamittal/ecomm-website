@@ -1,5 +1,6 @@
 import React from "react"
 import {Link, useNavigate} from "react-router-dom"
+import '../style/navbar.css'
 
 export default function Navbar(){
     const auth = localStorage.getItem('user') || ''
@@ -16,9 +17,9 @@ export default function Navbar(){
     return (
         <nav>
             {auth ? <ul className="nav-ul">
-                <li><Link to="/">Home</Link></li>
+                <li className="active"><Link to="/">Home</Link></li>
                 <li><Link to="/Products">Products</Link></li>
-                <li><Link to="/Profile">Profile</Link></li>
+                {/* <li><Link to="/Profile">Profile</Link></li> */}
                 <li className="right-nav"><Link to="/Cart">Cart</Link></li>
                 <li className="right-nav"><Link onClick={logout} to="/SignUp">Logout({user.name})</Link></li>
                 </ul>
