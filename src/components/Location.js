@@ -1,6 +1,7 @@
 import React,{useEffect, useState} from "react"
 import '../style/cart.css'
 import {Link, useNavigate} from "react-router-dom"
+import '../style/location.css'
 
 export default function Location(){
     const [products, setProducts] = useState([])
@@ -67,7 +68,7 @@ export default function Location(){
 
     useEffect(() => {
         if (formSubmitted) {
-            navigate('/Final');
+            navigate('/final');
         }
     }, [formSubmitted, navigate]);
 

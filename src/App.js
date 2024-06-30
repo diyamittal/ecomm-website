@@ -11,6 +11,7 @@ import Footer from "./components/Footer"
 import PrivateComponent from './components/PrivateComponent'
 import Cart from './components/Cart'
 import Location from './components/Location'
+import Final from './components/Final'
 
 
 export default function App(){
@@ -23,7 +24,9 @@ export default function App(){
         <Route path="/" element={<Home />}></Route>
         <Route path="/products" element={<Products />}></Route>
         <Route path="/cart" element={<Cart />}></Route>
-        <Route path='/Location' element={<Location />}></Route>
+        <Route path='/location' element={<Location />}></Route>
+        <Route path='/location' element={<Location />}></Route>
+        <Route path='/final' element={<Final />}></Route>
         </Route>
         <Route path="/SignUp" element={<SignUp/>}></Route>
         <Route path="/Login" element={<Login/>}></Route>

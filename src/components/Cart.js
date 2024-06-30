@@ -46,7 +46,7 @@ export default function Cart(){
     const navigate = useNavigate();
 
     const AddLocation =()=>{
-        navigate('/Location')
+        navigate('/location')
     }
 
     const handleAddtocart = (index)=>{
@@ -130,9 +130,9 @@ export default function Cart(){
                     </div>
                 </div>): <h1>No item in cart</h1>}
                 <div className="total-amount">
-                    <h3>Total Amount: Rs {calculateTotalPrice()}</h3>
+                    <h3 className="amount">Total Amount: Rs {calculateTotalPrice()}</h3>
                 </div>
-            <button className="cart-button" ><Link onClick={AddLocation} to="/Location" className="location">Add Location</Link></button>
+            <button className="cart-button" ><Link onClick={AddLocation} to="/location" className="location">Add Location</Link></button>
         </div>
     )
 }

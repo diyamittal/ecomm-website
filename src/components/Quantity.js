@@ -15,7 +15,7 @@ export default function Quantity({quantity, onAddToCart, onRemoveFromCart}){
     return (
         <div className="counter">
             <button className="counter-change" onClick={sub}>-</button>
-            <div className="counter-change">
+            <div className="counter-change1">
                 <h1 className="counting">{quantity}</h1>
             </div>
             <button className="counter-change" onClick={add}>+</button>

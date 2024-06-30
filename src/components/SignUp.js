@@ -17,7 +17,7 @@ export default function SignUp(){
     })
     const collectData = async()=>{
         console.log(name, email, password, phone)
-        let result = await fetch('http://localhost:5000/register', {
+        let result = await fetch('https://ecomm-server-sigma.vercel.app/register', {
             method: 'post',
             body: JSON.stringify({name, email, password, phone}),
             headers:{

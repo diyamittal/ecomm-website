@@ -3,8 +3,9 @@
 }
 
 .Cart-name{
-    margin-left: 600px;
+    margin-left: 650px;
     font-size: 25px;
+    color: white;
 }
 
 .cart-items{
@@ -14,10 +15,11 @@
     border-bottom: 1px sold #e0e0e0;
     transition: backgrounf-color 0.3s ease;
     margin-left: 400px;
+    color: white;
 }
 
 .cart-items:hover{
-    background-color: #f9f9f9;
+    background-color: rgb(56, 52, 52);
 }
 
 .cart-image{
@@ -42,6 +44,10 @@
     color: #ff0000;
     font-size: 24px;
     margin-right: 20px;
+}
+
+.amount{
+    color: white;
 }
 
 .price{
@@ -93,57 +99,30 @@
 }
 
 .cart-button{
-    height: 30px;
-    width: 150px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-left: 620px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
+    height: 50px;
+    width: 180px;
+    font-size: 85%;
+    border: 3px solid #04fb6b;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
     cursor: pointer;
+    animation: animateBg 5s linear infinite;
+}
+
+.cart-button:hover{
+    background-color: aqua;
 }
 
 .location{
     text-decoration: none;
     color: inherit;
-}
-
-.location-heading{
-    margin-left: 600px;
-}
-
-.inputBox1{
-    display: block;
-    margin-left: 550px;
-    margin-bottom: 25px;
-    padding: 7px;
-    width: 300px;
-    border: 1px solid rgb(178, 217, 250);
-}
-
-.total-price{
-    margin-left: 600px;
-}
-
-.payment{
-    margin-left: 550px;
-    margin-right: 20px;
-}
-
-.confirm-button{
-    height: 30px;
-    width: 150px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-left: 600px;
-    margin-top: 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
 }
 
 .Final-text{
