@@ -14,12 +14,14 @@ export default function SignUp(){
         if(auth){
             navigate('/')
         }
-    })
+    }, [navigate])
+
     const collectData = async()=>{
         console.log(name, email, password, phone)
         let result = await fetch('https://ecomm-server-sigma.vercel.app/register', {
             method: 'post',
             body: JSON.stringify({name, email, password, phone}),
+            mode: 'no-cors',
             headers:{
                 'Content-Type': 'application/json'
             },
