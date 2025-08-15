@@ -18,7 +18,7 @@ export default function Cart(){
             if(existingCart){
                 const token = localStorage.getItem('token')
                 if(token){
-                    let response = await fetch('http://localhost:5000/products', {
+                    let response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/products`, {
                     headers:{
                         authorization: `Bearer ${token}`
                     }
@@ -66,7 +66,7 @@ export default function Cart(){
             
             if (updatedProducts[index].quantity <= 1) {
                 const productId = updatedProducts[index].id;
-                const response = await fetch(`http://localhost:5000/products/${productId}`, {
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/products/${productId}`, {
                     method: "DELETE",
                     headers:{
                         "Content-Type":"application/json",

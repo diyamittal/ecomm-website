@@ -30,7 +30,7 @@ export default function ProductSlider({products}){
             const token = localStorage.getItem('token')
             console.log(token)
             try{
-                let result = await fetch('http://localhost:5000/add-product',{
+                let result = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/add-product`,{
                     method: 'post',
                     body: JSON.stringify({id: product.id, image: product.image, title: product.title, category: product.category, userId: user.id, price: product.price}),
                     headers:{

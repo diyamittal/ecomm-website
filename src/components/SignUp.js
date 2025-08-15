@@ -18,7 +18,7 @@ export default function SignUp(){
 
     const collectData = async()=>{
         console.log(name, email, password, phone)
-        let result = await fetch('http://localhost:5000/register', {
+        let result = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/register`, {
             method: 'post',
             body: JSON.stringify({name, email, password, phone}),
             headers:{

@@ -47,7 +47,7 @@ export default function Location(){
         const userId = JSON.parse(localStorage.getItem('user'))
         const totalAmount = calculateTotalPrice()
 
-        let result = await fetch('http://localhost:5000/add-location',{
+        let result = await fetch(`${process.env.REACT_APP_BACKEND_BASEURL}/add-location`,{
             method: 'post',
             body: JSON.stringify({house, Street, Landmark, City, State, userId}),
             headers:{
