@@ -21,7 +21,6 @@ export default function SignUp(){
         let result = await fetch('http://localhost:5000/register', {
             method: 'post',
             body: JSON.stringify({name, email, password, phone}),
-            mode: 'no-cors',
             headers:{
                 'Content-Type': 'application/json'
             },
